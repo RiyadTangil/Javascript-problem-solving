@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav style="background-color: #1f8598;" class="navbar  navbar-expand-lg navbar-light ">
+            <div class="container-fluid">
+                <a class="navbar-brand text-light" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto  mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link text-light  active" aria-current="page" href="#">Home</a>
+                        </li>
+
+
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+
+        <section class="text-center">
+            <div className="book-now-btn mt-2">
+                <button
+                    class="btn rounded"
+                    
+                >
+                    <span  class="text-green">
+                        Book Now
+                    </span>
+                </button>
+            </div>
+        </section>
+        <Section class="container">
+            <!-- inschi to feet -->
+            <div class="inchi-container p-5 shadow">
+
+                <div class="text-center d-inline-block bg-danger px-5 py-2 rounded-3 text-light">
+                    <h2>1.<span class="ms-3">Inch To Feet</span></h2>
+                    <hr class="my-0">
+                    <p class="my-0">Module 14-2</p>
+
+                </div>
+                <div class=mt-5>
+                    <div class="row row-cols-lg-auto g-3 align-items-center"></div>
+                    <div class="w-75">
+                        <div class="col-12">
+                            <label class="visually-hidden" for="inlineFormInputGroupUsername">Username</label>
+                            <div class="input-group input-group-lg">
+                                <div class="input-group-text">inchi</div>
+                                <input id="inch-input" type="text" class="form-control"
+                                    id="inlineFormInputGroupUsername" placeholder="Enter your enchi">
+                                <button onclick="inchToFeet()" type="submit" class="btn btn-primary">Convert to
+                                    feet</button>
+                            </div>
+                        </div>
+
+
+
+                        <h1 class=''>resut: <span id="result"></span></h1>
+
+                    </div>
+                </div>
+            </div>
+        </Section>
+        <!-- inschi to feet -->
+        <!-- leap year calculation start -->
+        <Section class="container">
+            <!-- inschi to feet -->
+            <div class="inchi-container p-5 shadow">
+
+                <div class="text-center d-inline-block bg-danger px-5 py-2 rounded-3 text-light">
+                    <h2>2.<span class="ms-3">Leap year chacker</span></h2>
+                    <hr class="my-0">
+                    <p class="my-0">Module 14-4</p>
+
+                </div>
+                <div class=mt-5>
+                    <div class="row row-cols-lg-auto g-3 align-items-center"></div>
+                    <div class="w-75">
+                        <div class="col-12">
+                            <label class="visually-hidden" for="inlineFormInputGroupUsername">Username</label>
+                            <div class="input-group input-group-lg">
+                                <div class="input-group-text">year</div>
+                                <input id="year-input" type="text" class="form-control"
+                                    id="inlineFormInputGroupUsername" placeholder="Enter a year">
+                                <button onclick="checkLeapYear()" type="submit" class="btn btn-primary">Check
+                                    </button>
+                            </div>
+                        </div>
+
+
+
+                        <h1 class=''>resut: <span id="leapYear-result"></span></h1>
+
+                    </div>
+                </div>
+            </div>
+        </Section>
+        <!-- leap year calculation end -->
+
+
+        <!-- factorial calculation start -->
+        <Section class="container">
+
+            <div class="inchi-container p-5 shadow">
+
+                <div class="text-center d-inline-block bg-danger px-5 py-2 rounded-3 text-light">
+                    <h2>3.<span class="ms-3">Calculate Factorial</span></h2>
+                    <hr class="my-0">
+                    <p class="my-0">Module 14-5, 14-6, 14-7</p>
+
+                </div>
+                <div class=mt-5>
+                    <div class="row row-cols-lg-auto g-3 align-items-center"></div>
+                    <div class="w-75">
+                        <div class="col-12">
+                            <label class="visually-hidden" for="inlineFormInputGroupUsername">Username</label>
+                            <div class="input-group input-group-lg">
+                                <div class="input-group-text">year</div>
+                                <input id="factorial-input" type="text" class="form-control"
+                                    id="inlineFormInputGroupUsername" placeholder="Enter a year">
+                                <button onclick="checkFactorial()" type="submit" class="btn btn-primary">Check
+                                    </button>
+                            </div>
+                        </div>
+
+
+
+                        <h1 class=''>resut: <span id="factorial-result"></span></h1>
+
+                    </div>
+                </div>
+            </div>
+        </Section>
+        <!-- factorial calculation end -->
+
+
+
+        <Section class="container">
+
+            <div class="inchi-container p-5 shadow">
+
+                <div class="text-center d-inline-block bg-danger px-5 py-2 rounded-3 text-light">
+                    <h2>4.<span class="ms-3">Fibonacci Series</span></h2>
+                    <hr class="my-0">
+                    <p class="my-0">Module 14-8, 14-9, 14-10</p>
+
+                </div>
+                <div class=mt-5>
+                    <div class="row row-cols-lg-auto g-3 align-items-center"></div>
+                    <div class="w-75">
+                        <div class="col-12">
+                            <label class="visually-hidden" for="inlineFormInputGroupUsername">Username</label>
+                            <div class="input-group input-group-lg">
+                                <div class="input-group-text">year</div>
+                                <input id="fibonacci-input" type="number" class="form-control"
+                                    id="inlineFormInputGroupUsername" placeholder="Enter a year">
+                                <button onclick="checkFibonacci()" type="submit" class="btn btn-primary">Check
+                                    </button>
+                            </div>
+                        </div>
+
+
+
+                        <div class="d-flex justify-content-start">
+                            <h1 class=" me-4 overflow-auto">resut: <span id="fibonacci-result"></span></h1>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </Section>
+        <!-- factorial calculation end -->
+
+        <!-- prime number checker -->
+
+        <Section class="container">
+
+            <div class="inchi-container p-5 shadow">
+
+                <div class="text-center d-inline-block bg-danger px-5 py-2 rounded-3 text-light">
+                    <h2>5.<span class="ms-3">Prime Number Checker</span></h2>
+                    <hr class="my-0">
+                    <p class="my-0">Module 14-11</p>
+
+                </div>
+                <div class=mt-5>
+                    <div class="row row-cols-lg-auto g-3 align-items-center"></div>
+                    <div class="w-75">
+                        <div class="col-12">
+                            <label class="visually-hidden" for="inlineFormInputGroupUsername">Username</label>
+                            <div class="input-group input-group-lg">
+                                <div class="input-group-text">year</div>
+                                <input id="prime-input" type="number" class="form-control"
+                                    id="inlineFormInputGroupUsername" placeholder="Enter a year">
+                                <button onclick="checkPrime()" type="submit" class="btn btn-primary">Check
+                                    </button>
+                            </div>
+                        </div>
+
+
+
+
+                        <h1>resut: <span id="prime-result"></span></h1>
+
+
+                    </div>
+                </div>
+            </div>
+        </Section>
+
+        <!-- swap variable -->
+        <Section class="container">
+
+            <div class="inchi-container p-5 shadow">
+
+                <div class="text-center d-inline-block bg-danger px-5 py-2 rounded-3 text-light">
+                    <h2>6.<span class="ms-3">Swap Checker</span></h2>
+                    <hr class="my-0">
+                    <p class="my-0">Module 14-11</p>
+
+                </div>
+                <div class=mt-5>
+                    <div class="row row-cols-lg-auto g-3 align-items-center"></div>
+                    <div class="w-75">
+                        <div class="col-12">
+                            <!-- <label class="visually-hidden" for="inlineFormInputGroupUsername">Username</label> -->
+                            <div class="input-group input-group-lg">
+                                <div class="input-group-text">A</div>
+                                <input id="swap-input-a" type="number" class="form-control"
+                                    id="inlineFormInputGroupUsername" placeholder="Enter a year">
+                                <div class="input-group-text">B</div>
+                                <input id="swap-input-b" type="number" class="form-control"
+                                    id="inlineFormInputGroupUsername" placeholder="Enter a year">
+                                <button onclick="swapVariable()" type="submit" class="btn btn-primary">Check
+                                    </button>
+                            </div>
+                        </div>
+
+
+
+
+                        <h1>resut: <span id="swap-result"></span>
+
+                        </h1>
+
+
+                    </div>
+                </div>
+            </div>
+        </Section>
+
+        <!-- get random number -->
+        <Section class="container">
+
+            <div class="inchi-container p-5 shadow">
+
+                <div class="text-center d-inline-block bg-danger px-5 py-2 rounded-3 text-light">
+                    <h2>7.<span class="ms-3">Random Checker</span></h2>
+                    <hr class="my-0">
+                    <p class="my-0">Module 14-11</p>
+
+                </div>
+                <div class=mt-5>
+                    <div class="row row-cols-lg-auto g-3 align-items-center"></div>
+                    <div class="w-75">
+                        <div class="col-12">
+                            <div class="input-group input-group-lg">
+                                <div class="input-group-text"></div>
+                                <input id="swap-input " readonly type="number" value="1" class="form-control"
+                                    aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"
+                                    placeholder="Enter a year">
+                                <div class="input-group-text">to</div>
+                                <input id="random-input" type="number" class="form-control"
+                                    id="inlineFormInputGroupUsername" placeholder="Enter a year">
+                                <button onclick="checkRandomNumber()" type="submit" class="btn btn-primary">Check
+                                    </button>
+                            </div>
+                        </div>
+
+
+
+
+                        <h1>resut: <span id="random-result"></span>
+
+                        </h1>
+
+
+                    </div>
+                </div>
+            </div>
+        </Section>
+
+        <!-- find the maximum number of -->
+        <Section class="container">
+
+            <div class="inchi-container p-5 shadow">
+
+                <div class="text-center d-inline-block bg-danger px-5 py-2 rounded-3 text-light">
+                    <h2>8.<span class="ms-3">Find The Max Num</span></h2>
+                    <hr class="my-0">
+                    <p class="my-0">Module 14-11</p>
+
+                </div>
+                <div class=mt-5>
+                    <div class="row row-cols-lg-auto g-3 align-items-center"></div>
+                    <div class="w-75">
+                        <div class="col-12">
+                            <div class="input-group input-group-lg">
+                                <div class="input-group-text">Numbers</div>
+                                <input id="user-number-input" type="text" class="form-control"
+                                    id="inlineFormInputGroupUsername" placeholder="Enter a year">
+                                <button onclick="getMaximumNumber()" type="submit" class="btn btn-primary">Check
+                                    </button>
+                            </div>
+                        </div>
+
+
+
+
+                        <h1>resut: <span id="maximum-result"></span>
+
+                        </h1>
+
+
+                    </div>
+                </div>
+            </div>
+        </Section>
+
+        <!-- sum of Numbers -->
+        <Section class="container">
+
+            <div class="inchi-container p-5 shadow">
+
+                <div class="text-center d-inline-block bg-danger px-5 py-2 rounded-3 text-light">
+                    <h2>9.<span class="ms-3">Find sum of Number</span></h2>
+                    <hr class="my-0">
+                    <p class="my-0">Module 14-11</p>
+
+                </div>
+                <div class=mt-5>
+                    <div class="row row-cols-lg-auto g-3 align-items-center"></div>
+                    <div class="w-75">
+                        <div class="col-12">
+                            <div class="input-group input-group-lg">
+                                <div class="input-group-text">Numbers</div>
+                                <input id="user-sum-input" type="text" class="form-control"
+                                    id="inlineFormInputGroupUsername" placeholder="Enter a year">
+                                <button onclick="getSumNumber()" type="submit" class="btn btn-primary">Check
+                                    </button>
+                            </div>
+                        </div>
+
+
+
+
+                        <h1>resut: <span id="sum-result"></span>
+
+                        </h1>
+
+
+                    </div>
+                </div>
+            </div>
+        </Section>
+        <!-- how to remove duplications -->
+
+
+        <Section class="container">
+
+            <div class="inchi-container p-5 shadow">
+
+                <div class="text-center d-inline-block bg-danger px-5 py-2 rounded-3 text-light">
+                    <h2>10.<span class="ms-3">Remove duplication</span></h2>
+                    <hr class="my-0">
+                    <p class="my-0">Module 14-11</p>
+
+                </div>
+                <div class=mt-5>
+                    <div class="row row-cols-lg-auto g-3 align-items-center"></div>
+                    <div class="w-75">
+                        <div class="col-12">
+                            <div class="input-group input-group-lg">
+                                <div class="input-group-text">Numbers</div>
+                                <input id="user-duplication-input" type="text" class="form-control"
+                                    id="inlineFormInputGroupUsername" placeholder="Enter a year">
+                                <button onclick="handleDuplicate()" type="submit" class="btn btn-primary">Check
+                                    </button>
+                            </div>
+                        </div>
+
+
+
+
+                        <h1>resut: <span id="duplication-result"></span>
+
+                        </h1>
+
+
+                    </div>
+                </div>
+            </div>
+        </Section>
+
+        <!-- count world -->
+        <Section class="container">
+
+            <div class="inchi-container p-5 shadow">
+
+                <div class="text-center d-inline-block bg-danger px-5 py-2 rounded-3 text-light">
+                    <h2>11.<span class="ms-3">Count words</span></h2>
+                    <hr class="my-0">
+                    <p class="my-0">Module 14-11</p>
+
+                </div>
+                <div class=mt-5>
+                    <div class="row row-cols-lg-auto g-3 align-items-center"></div>
+                    <div class="w-75">
+                        <div class="col-12">
+                            <div class="input-group input-group-lg">
+
+                                <textarea id="user-word-input" type="text" class="form-control" rows="3"
+                                    id="inlineFormInputGroupUsername" placeholder="Enter a year"></textarea>
+                            </div>
+                            <button onclick="handleCountWords()" type="submit" class="btn btn-primary mt-2">count
+                                word</button>
+                        </div>
+                        <h1>resut: <span id="word-result"></span>
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </Section>
+
+        <!-- Reverse strings -->
+        <Section class="container">
+
+            <div class="inchi-container p-5 shadow">
+
+                <div class="text-center d-inline-block bg-danger px-5 py-2 rounded-3 text-light">
+                    <h2>12.<span class="ms-3">Reverse strings</span></h2>
+                    <hr class="my-0">
+                    <p class="my-0">Module 14-11</p>
+
+                </div>
+                <div class=mt-5>
+                    <div class="row row-cols-lg-auto g-3 align-items-center"></div>
+                    <div class="w-75">
+                        <div class="col-12">
+                            <div class="input-group input-group-lg">
+
+                                <textarea id="reverse-word-input" type="text" class="form-control" rows="3"
+                                    id="inlineFormInputGroupUsername" placeholder="Enter a year"></textarea>
+                            </div>
+                            <button onclick="handleReverseString()" type="submit" class="btn btn-primary mt-2">count
+                                word</button>
+
+                        </div>
+
+
+
+
+                        <h1>resut: <span id="reverse-result"></span>
+
+                        </h1>
+
+
+                    </div>
+                </div>
+            </div>
+        </Section>
+
+
+        <!-- kilometer to meter -->
+        <Section class="container">
+
+            <div class="inchi-container p-5 shadow">
+
+                <div class="text-center d-inline-block bg-danger px-5 py-2 rounded-3 text-light">
+                    <h2>13.<span class="ms-3">Kilometer To meter</span></h2>
+                    <hr class="my-0">
+                    <p class="my-0">Module 14-11</p>
+
+                </div>
+                <div class=mt-5>
+                    <div class="row row-cols-lg-auto g-3 align-items-center"></div>
+                    <div class="w-75">
+                        <div class="col-12">
+                            <div class="input-group input-group-lg">
+                                <div class="input-group-text">Kilometer</div>
+                                <input id="kilo-input" type="number" class="form-control"
+                                    id="inlineFormInputGroupUsername" placeholder="Enter a year">
+                                <button onclick="handleKloToMeter()" type="submit" class="btn btn-primary">Convrt to
+                                    meter</button>
+                            </div>
+                        </div>
+                        <h1>resut: <span id="meter-result"></span>
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </Section>
+
+        <!-- Budget calculation -->
+
+        <Section class="container">
+
+            <div class="inchi-container p-5 shadow">
+
+                <div class="text-center d-inline-block bg-danger px-5 py-2 rounded-3 text-light">
+                    <h2>13.<span class="ms-3">budget calculation</span></h2>
+                    <hr class="my-0">
+                    <p class="my-0">Module 14-11</p>
+
+                </div>
+                <div class=mt-5>
+                    <div class="row row-cols-lg-auto g-3 align-items-center"></div>
+                    <div class="w-75">
+                        <div class="col-12">
+                            <div class="input-group input-group-lg">
+                                <div class="input-group-text">Watch</div>
+                                <input id="watch-number" type="number" class="form-control"
+                                    id="inlineFormInputGroupUsername" placeholder="Watch">
+                                    <div class="input-group-text">Phone</div>
+                                <input id="phone-number" type="number" class="form-control"
+                                    id="inlineFormInputGroupUsername" placeholder="Phone">
+                                    <div class="input-group-text">Laptop</div>
+                                <input id="laptop-number" type="number" class="form-control"
+                                    id="inlineFormInputGroupUsername" placeholder="laptop">
+                                <button onclick="handleBudgetCalculator()" type="submit" class="btn btn-primary">Total</button>
+                            </div>
+                        </div>
+                        <h1>resut: <span id="budget-calculation-result"></span>
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </Section>
+       
+    </main>
+
+    <!-- external js file -->
+    <script src="script.js"></script>
+</body>
+
+</html>
