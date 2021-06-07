@@ -1,10 +1,16 @@
 //convety inch to feet
-const inch = document.getElementById('inch-input');
+
 
 const inchToFeet = () => {
+    const inch = document.getElementById('inch-input').value;
+   if(inch<12){
+    document.getElementById('result').innerText ="please enter minimum value (e,i 12 inch)";
+   }
+   else{
     let feet = inch.value / 12;
     document.getElementById('result').innerText = Math.floor(feet);
 
+   }
 }
 // check leap year
 const checkLeapYear = () => {
@@ -22,10 +28,15 @@ const checkLeapYear = () => {
 const checkFactorial = () => {
     const factorial = document.getElementById('factorial-input').value;
     let factorialNumber = 1;
-    for (let i = 1; i < factorial; i++) {
+    if(factorial <1){
+        document.getElementById('factorial-result').innerText = `enter a valid number`;
+    }
+   else{
+    for (let i = 1; i <= factorial; i++) {
         factorialNumber = factorialNumber * i;
         document.getElementById('factorial-result').innerText = factorialNumber;
     }
+   }
 }
 //check the  fibonacci number
 const checkFibonacci = () => {
@@ -55,9 +66,10 @@ const checkPrime = () => {
     // let isPrime = true;
 
 
-    if (initialNumber == 1) {
+    if (initialNumber <= 1) {
         document.getElementById('prime-result').innerText = `${initialNumber}  is neither prime nor composite number.`
     }
+   
     else if (initialNumber > 2) {
         for (let i = 2; i < initialNumber; i++) {
 
