@@ -15,30 +15,31 @@ const inchToFeet = () => {
 // auto email generator
 const generatorVariable = () => {
     let emailFirstName = document.getElementById('emailFirstName').value;
-    let emailLastName = document.getElementById('emailLastName').value;
+   let fullName = emailFirstName.split(" ");
+    console.log(fullName); 
     let emailTargetWebsite = document.getElementById('emailTargetWebsite').value;
     let email = []
     console.log({ email })
     for (let i = 0; i < 5; i++) {
         if (i === 0) {
-            email.push(emailFirstName +"."+ emailLastName + "@" + emailTargetWebsite)
+            email.push(fullName[0] +"."+ fullName[1] + "@" + emailTargetWebsite)
 
         }
         else if (i === 1) {
-            email.push(emailFirstName + "@" + emailTargetWebsite)
+            email.push(fullName[0] + "@" + emailTargetWebsite)
            
 
         }
         else if (i === 2) {
-            email.push(emailLastName + "@" + emailTargetWebsite)
+            email.push(fullName[1] + "@" + emailTargetWebsite)
 
         }
         else if (i === 3) {
-            email.push(emailFirstName  +"-"+ emailLastName + "@" + emailTargetWebsite)
+            email.push(fullName[0]  +"-"+ fullName[1] + "@" + emailTargetWebsite)
 
         }
         else if (i === 3) {
-            email.push(emailFirstName  +"_"+ emailLastName + "@" + emailTargetWebsite)
+            email.push(fullName[0]  +"_"+ fullName[1] + "@" + emailTargetWebsite)
 
         }
     }
