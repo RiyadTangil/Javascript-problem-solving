@@ -21,24 +21,24 @@ const generatorVariable = () => {
     console.log({ email })
     for (let i = 0; i < 5; i++) {
         if (i === 0) {
-            email.push(emailFirstName +"."+ emailLastName + "@" + emailTargetWebsite+".com")
+            email.push(emailFirstName +"."+ emailLastName + "@" + emailTargetWebsite)
 
         }
         else if (i === 1) {
-            email.push(emailFirstName + "@" + emailTargetWebsite+".com")
+            email.push(emailFirstName + "@" + emailTargetWebsite)
            
 
         }
         else if (i === 2) {
-            email.push(emailLastName + "@" + emailTargetWebsite+".com")
+            email.push(emailLastName + "@" + emailTargetWebsite)
 
         }
         else if (i === 3) {
-            email.push(emailFirstName  +"-"+ emailLastName + "@" + emailTargetWebsite+".com")
+            email.push(emailFirstName  +"-"+ emailLastName + "@" + emailTargetWebsite)
 
         }
         else if (i === 3) {
-            email.push(emailFirstName  +"_"+ emailLastName + "@" + emailTargetWebsite+".com")
+            email.push(emailFirstName  +"_"+ emailLastName + "@" + emailTargetWebsite)
 
         }
     }
