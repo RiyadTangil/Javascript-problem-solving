@@ -3,15 +3,54 @@
 
 const inchToFeet = () => {
     const inch = document.getElementById('inch-input').value;
-   if(inch<12){
-    document.getElementById('result').innerText ="please enter minimum value (e,i 12 inch)";
-   }
-   else{
-    let feet = inch.value / 12;
-    document.getElementById('result').innerText = Math.floor(feet);
+    if (inch < 12) {
+        document.getElementById('result').innerText = "please enter minimum value (e,i 12 inch)";
+    }
+    else {
+        let feet = inch.value / 12;
+        document.getElementById('result').innerText = Math.floor(feet);
 
-   }
+    }
 }
+// auto email generator
+const generatorVariable = () => {
+    let emailFirstName = document.getElementById('emailFirstName').value;
+    let emailLastName = document.getElementById('emailLastName').value;
+    let emailTargetWebsite = document.getElementById('emailTargetWebsite').value;
+    let email = []
+    console.log({ email })
+    for (let i = 0; i < 5; i++) {
+        if (i === 0) {
+            email.push(emailFirstName +"."+ emailLastName + "@" + emailTargetWebsite+".com")
+
+        }
+        else if (i === 1) {
+            email.push(emailFirstName + "@" + emailTargetWebsite+".com")
+           
+
+        }
+        else if (i === 2) {
+            email.push(emailLastName + "@" + emailTargetWebsite+".com")
+
+        }
+        else if (i === 3) {
+            email.push(emailFirstName  +"-"+ emailLastName + "@" + emailTargetWebsite+".com")
+
+        }
+        else if (i === 3) {
+            email.push(emailFirstName  +"_"+ emailLastName + "@" + emailTargetWebsite+".com")
+
+        }
+    }
+    email.join("")
+     document.getElementById('email-result').innerText = email.join('\r\n');
+}
+
+
+
+
+
+
 // check leap year
 const checkLeapYear = () => {
     const year = document.getElementById('year-input').value;
@@ -28,15 +67,15 @@ const checkLeapYear = () => {
 const checkFactorial = () => {
     const factorial = document.getElementById('factorial-input').value;
     let factorialNumber = 1;
-    if(factorial <1){
+    if (factorial < 1) {
         document.getElementById('factorial-result').innerText = `enter a valid number`;
     }
-   else{
-    for (let i = 1; i <= factorial; i++) {
-        factorialNumber = factorialNumber * i;
-        document.getElementById('factorial-result').innerText = factorialNumber;
+    else {
+        for (let i = 1; i <= factorial; i++) {
+            factorialNumber = factorialNumber * i;
+            document.getElementById('factorial-result').innerText = factorialNumber;
+        }
     }
-   }
 }
 //check the  fibonacci number
 const checkFibonacci = () => {
@@ -69,7 +108,7 @@ const checkPrime = () => {
     if (initialNumber <= 1) {
         document.getElementById('prime-result').innerText = `${initialNumber}  is neither prime nor composite number.`
     }
-   
+
     else if (initialNumber > 2) {
         for (let i = 2; i < initialNumber; i++) {
 
@@ -184,7 +223,7 @@ const handleBudgetCalculator = () => {
         document.getElementById('budget-calculation-result').innerText = "please enter a valid number";
     }
     else {
-        document.getElementById('budget-calculation-result').innerText = watchQuantity * 50 + phoneQuantity * 100 + laptopQuantity * 500 +" tk";
+        document.getElementById('budget-calculation-result').innerText = watchQuantity * 50 + phoneQuantity * 100 + laptopQuantity * 500 + " tk";
     }
 
 
