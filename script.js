@@ -35,13 +35,10 @@ const generatorVariable = () => {
 
         }
         else if (i === 3) {
-            email.push(fullName[0]  +"-"+ fullName[1] + "@" + emailTargetWebsite)
+            email.push(fullName[0].charAt()  + fullName[1] + "@" + emailTargetWebsite)
 
         }
-        else if (i === 3) {
-            email.push(fullName[0]  +"_"+ fullName[1] + "@" + emailTargetWebsite)
-
-        }
+       
     }
     email.join("")
      document.getElementById('email-result').innerText = email.join('\r\n');
