@@ -15,19 +15,19 @@ const inchToFeet = () => {
 // auto email generator
 const generatorVariable = () => {
     let emailFirstName = document.getElementById('emailFirstName').value;
-   let fullName = emailFirstName.split(" ");
-    console.log(fullName); 
+    let fullName = emailFirstName.split(" ");
+    console.log(fullName);
     let emailTargetWebsite = document.getElementById('emailTargetWebsite').value;
     let email = []
     console.log({ email })
     for (let i = 0; i < 5; i++) {
         if (i === 0) {
-            email.push(fullName[0] +"."+ fullName[1] + "@" + emailTargetWebsite)
+            email.push(fullName[0] + "." + fullName[1] + "@" + emailTargetWebsite)
 
         }
         else if (i === 1) {
             email.push(fullName[0] + "@" + emailTargetWebsite)
-           
+
 
         }
         else if (i === 2) {
@@ -35,16 +35,190 @@ const generatorVariable = () => {
 
         }
         else if (i === 3) {
-            email.push(fullName[0].charAt()  + fullName[1] + "@" + emailTargetWebsite)
+            email.push(fullName[0].charAt() + fullName[1] + "@" + emailTargetWebsite)
 
         }
-       
+
     }
     email.join("")
-     document.getElementById('email-result').innerText = email.join('\r\n');
+    document.getElementById('email-result').innerText = email.join('\r\n');
+
+
+}
+
+// accountant  mail massage generator
+const generateJObMail = () => {
+    let HRName = document.getElementById('HRName').value;
+
+
+    let jobLocation = document.getElementById('jobLocation').value;
+
+    let today = new Date();
+    let dd = String(today.getDate()).padStart(2, '0');
+    let mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+    let yyyy = today.getFullYear();
+
+    today = mm + '/' + dd + '/' + yyyy;
+
+    const emailOutput = `
+${today}
+${HRName}
+The head of ${jobLocation}
+
+Dear Sir/Madam,
+In response to your job advertisement published at linkedin.com dated ${today}. I would like to introduce myself as I am CMA partly qualified and applying for  Accountant job at your company. My experience in accounting and the additional skills that I have obtained will make me an asset to your team. I have strong experience in payroll administration, accounts payable,Excel, Quickbook online, journal entries, and contracts administration. I am thrilled to know that your industries work is related to my interests.
+
+As indicated in my resume, I   have graduated with a Bachelor of BBA degree from reputed University. During the last three years, I have had the opportunity to work in many areas of accounting, and I really believe that this experience has prepared me for the industry.
+
+I am very interested in an opportunity and would enjoy meeting you to discuss possible positions. I believe that my previous experiences will make me an asset to your company.
+
+Sincerely,
+
+Riyad hasan
+Station Road, unclassified, Cumilla, Bangladesh
+
+Call:  +880 1830799683
+Email: riyad.hasan7272@gmail.com
+linkedin: https://www.linkedin.com/in/riyad-hasan-cma-partly-qualified-03b53b215/
+Resume:  https://drive.google.com/file/d/1wmJWOs1NQ9h4i0Jc73iOLDynRIqBVQOd/view?usp=sharing
+`
+    document.getElementById('email-message').innerText = emailOutput;
+    navigator.clipboard.writeText(emailOutput).then(function () {
+        alert("Copied successfully ");
+    }, function () {
+        alert("Fail to copy ");
+    });
+
 }
 
 
+
+function copyHRMail() {
+    let HRName = document.getElementById('HRName').value;
+    let today = new Date();
+    let dd = String(today.getDate()).padStart(2, '0');
+    let mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+    let yyyy = today.getFullYear();
+
+    today = mm + '/' + dd + '/' + yyyy;
+
+    const emailOutput = `
+   Hello ${HRName}
+
+   Have a good day.
+   
+   I am CMA partly qualified and applying for an Accountant job at your company.  I am confident and my academic skills, specifically CMA, make it possible to work with any practical situations. Could you please tell me how I can be prepared for the interview. or any suggestion for me
+   .I will be very respectful to you if you refer my resume to your company, your team, and your company looking awesome. I would like to work and grow with your company..
+   
+   Sincerely,
+
+   Riyad hasan
+   Station Road, unclassified, Cumilla, Bangladesh
+   
+   Call:  +880 1830799683
+   Email: riyad.hasan7272@gmail.com
+   linkedin: https://www.linkedin.com/in/riyad-hasan-cma-partly-qualified-03b53b215/
+   Resume:  https://drive.google.com/file/d/1wmJWOs1NQ9h4i0Jc73iOLDynRIqBVQOd/view?usp=sharing
+   
+   
+`
+    document.getElementById('email-message').innerText = emailOutput;
+    navigator.clipboard.writeText(emailOutput).then(function () {
+        alert("Copied successfully ");
+    }, function () {
+        alert("Fail to copy ");
+    });
+
+
+}
+
+//programmer mail generator
+const generateProgrammerJObMail = () => {
+    let HRName = document.getElementById('ProgrammerHRName').value;
+    let jobLocation = document.getElementById('ProgrammerJobLocation').value;
+    let today = new Date();
+    let dd = String(today.getDate()).padStart(2, '0');
+    let mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+    let yyyy = today.getFullYear();
+    today = mm + '/' + dd + '/' + yyyy;
+
+    const emailOutput = `
+${today}
+${HRName}
+The head of ${jobLocation}
+
+Dear Sir/Madam,
+In response to your job advertisement published at linkedin.com dated ${today}.So excited to see that you are looking for some React developer .React is my passion and love helping business .  As I believe I have the skills, qualifications, and experience necessary to make a significant contribution to your organization.
+
+I have experience in JavaScript, TypeScript, HTML, CSS, Bootstrap, SASS, React.JS, Redux, React bootstrap, nodeJS, ExpressJS and MongoDB.  I am self-motivated, energetic, enthusiastic, and ever ready to learn new things. I am confident to ensure the highest level of professionalism and commitment to my job.
+
+I believe working in a reputed organization like yours will provide me an excellent opportunity for my career. I would truly be grateful if I was finally selected for that post and I will prove myself to be an important asset to your company through my dedication, sincerity, and highest level of professionalism.
+
+you can be reached anytime by email at  Riyad.hasan8282@gmail.com
+
+Sincerely,
+
+Riyad hasan
+Station Road, Cumilla, Bangladesh
+
+Call:  +880 1830799683
+Email: riyad.hasan8282@gmail.com
+linkedin : https://www.linkedin.com/in/riyad-hasan-ab2867210/
+Github : https://github.com/RiyadTangil
+Resume:  https://drive.google.com/file/d/1fW7VdFaTuGQIoEBcDOhQ4k7nCXPlNm09/view?usp=sharing
+Portfolio : https://riyadtangil.github.io/my-portfolio/
+`
+    document.getElementById('ProgrammerEmail-message').innerText = emailOutput;
+    navigator.clipboard.writeText(emailOutput).then(function () {
+        alert("Copied successfully ");
+    }, function () {
+        alert("Fail to copy ");
+    });
+
+}
+
+
+
+function copyProgrammerHRMail() {
+    let HRName = document.getElementById('ProgrammerHRName').value;
+
+    let today = new Date();
+    let dd = String(today.getDate()).padStart(2, '0');
+    let mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+    let yyyy = today.getFullYear();
+
+    today = mm + '/' + dd + '/' + yyyy;
+
+    const emailOutput = `
+   Hello ${HRName}
+
+Have a good day,
+So excited to see that you are looking for some React developer . React is my passion and love helping business. I have applied for a Frontend developer job at your company Could you please tell me how can I be prepared for the interview. or any suggestion for me 
+.I will be very respectful to you if you refer my resume to your company, your team, and your company looking awesome. I would like to work and grow with your company..
+
+   Sincerely,
+
+   Riyad hasan
+   Station Road, Cumilla, Bangladesh
+   
+   Call:  +880 1830799683
+   Email: riyad.hasan8282@gmail.com
+   linkedin : https://www.linkedin.com/in/riyad-hasan-ab2867210/
+   Github : https://github.com/RiyadTangil
+   Resume:  https://drive.google.com/file/d/1fW7VdFaTuGQIoEBcDOhQ4k7nCXPlNm09/view?usp=sharing
+   Portfolio : https://riyadtangil.github.io/my-portfolio/
+   
+   
+`
+    document.getElementById('ProgrammerEmail-message').innerText = emailOutput;
+    navigator.clipboard.writeText(emailOutput).then(function () {
+        alert("Copied successfully ");
+    }, function () {
+        alert("Fail to copy ");
+    });
+
+
+}
 
 
 
