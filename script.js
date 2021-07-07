@@ -20,7 +20,7 @@ const generatorVariable = () => {
     let emailTargetWebsite = document.getElementById('emailTargetWebsite').value;
     let email = []
     console.log({ email })
-    for (let i = 0; i < 5; i++) {
+    for (let i = 0; i < 7; i++) {
         if (i === 0) {
             email.push(fullName[0] + "." + fullName[1] + "@" + emailTargetWebsite)
 
@@ -38,10 +38,28 @@ const generatorVariable = () => {
             email.push(fullName[0].charAt() + fullName[1] + "@" + emailTargetWebsite)
 
         }
+        else if (i === 4) {
+            email.push(fullName[0].charAt()+"." + fullName[1] + "@" + emailTargetWebsite)
+
+        }
+        else if (i === 5) {
+            email.push(fullName[0] + fullName[1].charAt() + "@" + emailTargetWebsite)
+
+        }
+        else if (i === 6) {
+            email.push(fullName[0] +"."+ fullName[1].charAt() + "@" + emailTargetWebsite)
+
+        }
 
     }
     email.join("")
-    document.getElementById('email-result').innerText = email.join('\r\n');
+    let emailOutput= email.join('\r\n');
+    document.getElementById('email-result').innerText = emailOutput;
+    navigator.clipboard.writeText(emailOutput).then(function () {
+        alert("Copied successfully ");
+    }, function () {
+        alert("Fail to copy ");
+    });
 
 
 }
