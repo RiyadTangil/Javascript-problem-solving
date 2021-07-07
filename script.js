@@ -61,7 +61,7 @@ const generateJObMail = () => {
     today = mm + '/' + dd + '/' + yyyy;
 
     const emailOutput = `
-${today}
+To
 ${HRName}
 The head of ${jobLocation}
 
@@ -103,22 +103,21 @@ function copyHRMail() {
     today = mm + '/' + dd + '/' + yyyy;
 
     const emailOutput = `
-   Hello ${HRName}
+Hello ${HRName}
 
-   Have a good day.
+Have a good day.
    
-   I am CMA partly qualified and applying for an Accountant job at your company.  I am confident and my academic skills, specifically CMA, make it possible to work with any practical situations. Could you please tell me how I can be prepared for the interview. or any suggestion for me
-   .I will be very respectful to you if you refer my resume to your company, your team, and your company looking awesome. I would like to work and grow with your company..
+I am CMA partly qualified and applying for an Accountant job at your company.  I am confident and my academic skills, specifically CMA, make it possible to work with any practical situations. Could you please tell me how I can be prepared for the interview. or any suggestion for me .I will be very respectful to you if you refer my resume to your company, your team, and your company looking awesome. I would like to work and grow with your company..
    
-   Sincerely,
+Sincerely,
 
-   Riyad hasan
-   Station Road, unclassified, Cumilla, Bangladesh
+Riyad hasan
+Station Road, unclassified, Cumilla, Bangladesh
    
-   Call:  +880 1830799683
-   Email: riyad.hasan7272@gmail.com
-   linkedin: https://www.linkedin.com/in/riyad-hasan-cma-partly-qualified-03b53b215/
-   Resume:  https://drive.google.com/file/d/1wmJWOs1NQ9h4i0Jc73iOLDynRIqBVQOd/view?usp=sharing
+Call:  +880 1830799683
+Email: riyad.hasan7272@gmail.com
+linkedin: https://www.linkedin.com/in/riyad-hasan-cma-partly-qualified-03b53b215/
+Resume:  https://drive.google.com/file/d/1wmJWOs1NQ9h4i0Jc73iOLDynRIqBVQOd/view?usp=sharing
    
    
 `
@@ -144,7 +143,7 @@ const generateProgrammerJObMail = () => {
 
     const emailOutput = `
 ${today}
-${HRName}
+To 
 The head of ${jobLocation}
 
 Dear Sir/Madam,
@@ -190,23 +189,22 @@ function copyProgrammerHRMail() {
     today = mm + '/' + dd + '/' + yyyy;
 
     const emailOutput = `
-   Hello ${HRName}
+Hello ${HRName}
 
 Have a good day,
-So excited to see that you are looking for some React developer . React is my passion and love helping business. I have applied for a Frontend developer job at your company Could you please tell me how can I be prepared for the interview. or any suggestion for me 
-.I will be very respectful to you if you refer my resume to your company, your team, and your company looking awesome. I would like to work and grow with your company..
+So excited to see that you are looking for some React developer . React is my passion and love helping business. I have applied for a Frontend developer job at your company Could you please tell me how can I be prepared for the interview. or any suggestion for me. I will be very respectful to you if you refer my resume to your company, your team, and your company looking awesome. I would like to work and grow with your company..
 
-   Sincerely,
+Sincerely,
 
-   Riyad hasan
-   Station Road, Cumilla, Bangladesh
+Riyad hasan
+Station Road, Cumilla, Bangladesh
    
-   Call:  +880 1830799683
-   Email: riyad.hasan8282@gmail.com
-   linkedin : https://www.linkedin.com/in/riyad-hasan-ab2867210/
-   Github : https://github.com/RiyadTangil
-   Resume:  https://drive.google.com/file/d/1fW7VdFaTuGQIoEBcDOhQ4k7nCXPlNm09/view?usp=sharing
-   Portfolio : https://riyadtangil.github.io/my-portfolio/
+Call:  +880 1830799683
+Email: riyad.hasan8282@gmail.com
+linkedin : https://www.linkedin.com/in/riyad-hasan-ab2867210/
+Github : https://github.com/RiyadTangil
+Resume:  https://drive.google.com/file/d/1fW7VdFaTuGQIoEBcDOhQ4k7nCXPlNm09/view?usp=sharing
+Portfolio : https://riyadtangil.github.io/my-portfolio/
    
    
 `
