@@ -1,4 +1,4 @@
-//convety inch to feet
+//convert inch to feet
 
 
 const inchToFeet = () => {
@@ -7,7 +7,7 @@ const inchToFeet = () => {
         document.getElementById('result').innerText = "please enter minimum value (e,i 12 inch)";
     }
     else {
-        let feet = inch.value / 12;
+        let feet = inch / 12;
         document.getElementById('result').innerText = Math.floor(feet);
 
     }
@@ -241,8 +241,11 @@ Portfolio : https://riyadtangil.github.io/my-portfolio/
 
 // check leap year
 const checkLeapYear = () => {
+
+
+    
     const year = document.getElementById('year-input').value;
-    if (year == 0 || year < 1582) {
+    if ( year < 4) {
         document.getElementById('leapYear-result').innerText = `please enter valid year`;
     }
     else if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
