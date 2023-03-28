@@ -125,28 +125,41 @@
                 </div>
                 <div class=mt-5>
                     <div class="row row-cols-lg-auto g-3 align-items-center"></div>
-                    <div class="w-75">
+                    <div >
                         <div class="col-12">
                             <!-- <label class="visually-hidden" for="inlineFormInputGroupUsername">Username</label> -->
                             <div class="input-group input-group-lg">
-                                <div class="input-group-text">full name with space</div>
+                                
+                                <div class="input-group-text">name</div>
                                 <input id="emailFirstName" type="text" class="form-control"
-                                    id="inlineFormInputGroupUsername" placeholder="name">
+                                     placeholder="name">
                                
-                                    <div class="input-group-text"> targeted web site </div>
+                                    <div class="input-group-text"> web site </div>
                                     <input id="emailTargetWebsite" type="text" class="form-control"
-                                        id="inlineFormInputGroupUsername" placeholder="emter domain">
-                                <button onclick="generatorVariable()" type="submit" class="btn btn-primary">generate
-                                    </button>
+                                        placeholder="enter domain">
+                                        <div class="input-group-text">Profession</div>
+                                        <input id="profession" type="text" class="form-control"
+                                            placeholder="name">
                             </div>
+                           <div class="d-flex justify-content-center mt-2">
+                            <button onclick="generatorVariable()" type="submit" class="btn btn-primary">Generate Email
+                            </button>
+                        <button onclick="generatorEmail()" type="submit" class="btn btn-success mx-3"> Hiring Manger Email
+                            </button>
+                        <button onclick="generatorRecommend()" type="submit" class="btn btn-success"> recommendation message
+                            </button>
+                            </button>
+                        <button onclick="generatorCoverLetter()" type="submit" class="btn btn-warning ms-3"> cover letter
+                            </button>
+                           </div>
                         </div>
 
 
 
 
-                        <h1>resut: <span id="email-result"></span>
+                        <small>Result: <span id="email-result"></span>
 
-                        </h1>
+                        </small>
 
 
                     </div>
